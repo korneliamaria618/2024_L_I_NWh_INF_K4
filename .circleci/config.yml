@@ -3,11 +3,11 @@ jobs:
   build-and-test:
     machine:
       image: ubuntu-2004:202104-01
-    stepsz:z
+    steps:
       - checkout
       - run: make deps
       - run: make test
 workflows:
   basic:
-    jobs:618
+    jobs:
       - build-and-test
